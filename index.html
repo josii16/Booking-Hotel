@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking System - Bahir Dar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Welcome Section -->
+    <section class="welcome-section" >
+        <div class="welcome-content">
+            <h1>Welcome to Papirus Hotels</h1>
+            <p>Your dream stay in one of the most beautiful cities of Ethiopia!</p>
+            <a href="#hotels" class="scroll-down-btn">Explore Hotels</a>
+        </div>
+    </section>
+
+    <!-- Hotels Section -->
+    <section class="hotel-list" id="hotels">
+        <h2>Available Hotels in Bahir Dar</h2>
+        <div class="hotel" id="hotel1">
+            <img src="image/blue.jpg" alt="Blue Nile Resort">
+            <h3>Blue Nile Resort</h3>
+            <p>Location: Bahir Dar</p>
+            <p>Price: $100/night</p>
+            <button onclick="bookHotel('Blue Nile Resort')">Book Now</button>
+        </div>
+        <div class="hotel" id="hotel2">
+            <img src="image/lake .jpg" alt="Lakeview Hotel">
+            <h3>Lakeview Hotel</h3>
+            <p>Location: Bahir Dar</p>
+            <p>Price: $80/night</p>
+            <button onclick="bookHotel('Lakeview Hotel')">Book Now</button>
+        </div>
+        <div class="hotel" id="hotel3">
+            <img src="image/sun.jpg" alt="Sunset Inn" style="height: 200px;">
+            <h3>Sunset Inn</h3>
+            <p>Location: Bahir Dar</p>
+            <p>Price: $120/night</p>
+            <button onclick="bookHotel('Sunset Inn')">Book Now</button>
+        </div>
+        <!-- More hotels can be added here -->
+    </section>
+
+    <!-- Booking Form -->
+    <section id="booking-form" class="booking-form">
+        <h2>Book Your Stay</h2>
+        <form id="form">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="hotel">Hotel:</label>
+            <input type="text" id="hotel" name="hotel" readonly><br><br>
+
+            <label for="checkin">Check-in Date:</label>
+            <input type="date" id="checkin" name="checkin" required><br><br>
+
+            <label for="checkout">Check-out Date:</label>
+            <input type="date" id="checkout" name="checkout" required><br><br>
+
+            <button type="submit">Confirm Booking</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Hotel Booking - Bahir Dar</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

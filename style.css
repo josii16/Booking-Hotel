@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1, h2, h3 {
+    font-family: 'Arial', sans-serif;
+    color: #2b1818;
+}
+
+/* Welcome Section */
+.welcome-section {
+    background-image: url('image/wellcome\ .jpg'); /* Replace with your own image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: rgb(25, 7, 7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+   
+}
+
+.welcome-section h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.welcome-section p {
+    font-size: 1.5em;
+    margin-bottom: 40px;
+}
+
+.scroll-down-btn {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2em;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.scroll-down-btn:hover {
+    background-color: #218838;
+}
+
+/* Hotels Section */
+.hotel-list {
+    padding: 40px;
+    text-align: center;
+}
+
+.hotel-list h2 {
+    margin-bottom: 30px;
+    font-size: 2em;
+}
+
+.hotel {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    display: inline-block;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.hotel:hover {
+    transform: translateY(-10px);
+}
+
+.hotel img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.hotel h3 {
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Booking Form */
+.booking-form {
+    background-color: #fff;
+    padding: 40px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.booking-form h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.booking-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
